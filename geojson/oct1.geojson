@@ -1,0 +1,71 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.542818,35.62127 ]
+    },
+    "properties": {
+    "name":"Grove Park Inn",
+    "maxsize":1000
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.554087,35.619748 ]
+    },
+    "properties": {
+    "name":"Merrimon Ave",
+    "maxsize":160
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.553749,35.596709 ]
+    },
+    "properties": {
+    "name":"Rankin Ave",
+    "maxsize":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.536944,35.563139 ]
+    },
+    "properties": {
+    "name":"Forestry Camp",
+    "maxsize":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.554864,35.597521 ]
+    },
+    "properties": {
+    "name":"Civic Center",
+    "maxsize":0
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.623081,35.565192 ]
+    },
+    "properties": {
+    "name":"Asheville School",
+    "maxsize":0
+    }
+  }
+]
+}

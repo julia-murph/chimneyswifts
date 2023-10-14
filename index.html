@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Old+Standard+TT&display=swap" rel="stylesheet">
+	<title>Chimney Swifts: Asheville, NC</title>
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		p{
+  			font-family: 'EB Garamond', serif;
+  			font-size: 18px;
+  			color: black;
+  			text-align: center;
+		}
+	</style>
+	<script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+</head>
+<body>
+<!---nav bar--->
+	<div class="navbar">
+		<div class="row" style="margin-left: 50px; margin-right: 50px">
+			<div class="column">
+				<a href="about.html" class="current">About</a>
+			</div>
+			<div class="column">
+				<a href="sources.html" class="current">Sources</a>
+			</div>
+			<div class="column">
+				<a href="#map" class="current">Roosts in Asheville, NC</a>
+			</div>
+			<div class="column">
+				<a href="#map_2" class="current">Roost dynamics of 2020 season</a>
+			</div>
+		</div>
+	</div>
+	<main>
+<!---slide 1, landing page--->
+<a id="top"></a>
+	<section class="parallax bg1">
+	<div class="textbg">
+		<h1 style="font-size: 60px; color:#F3E9CC">Chimney swift (<scan style="font-style: italic">Chaetura pelagica</scan>)</h1>
+	<div>
+		<h2 style="color: #F3E9CC; letter-spacing: 2px">Dynamics of Asheville chimney swift roost system during 2020 autumn migration</h2></div>
+		</div>
+	</section>
+<!--slide 2-->	
+	<section class="no-parallax">
+		<div class="row">
+			<!---first column--->
+			<div class="column" style="margin-left: 200px">
+				<!---first box of text--->
+				<div class="textbg_nop">
+					<div class="definition">
+					<h1 style="text-align: left; margin-left: 20px; font-family: 'EB Garamond', serif; font-size: 42px; font-style: bold; color: #F3E9CC;">de·scrip·tion</h1>
+					</div>
+					<h2 style="margin-left: 30px; margin-right: 30px">Chimney swifts (<scan style="font-style:italic">Chaetura pelagica</scan>) are small birds that have adapted to live within man-made structures. They have long, curved wings and small bodies, making it impossible for them to perch. They instead cling to vertical walls, either inside of a tree or cave, or more commonly, a chimney.</h2>
+				</div>
+				<!---spacer div--->
+				<div style="height:40px;"></div>
+				<!---second box of text--->
+					<div class="textbg_nop">
+						<div class="definition">
+							<h1 style="text-align: left; margin-left: 20px; font-family: 'EB Garamond', serif; font-size: 42px; font-style: bold; color: #F3E9CC;">ad·ap·ta·tion</h1>
+						</div>
+						<h2 style="margin-left: 30px; margin-right: 30px">When European colonists first moved to America, swift habitats were destroyed through deforestation. The birds then adapted to living inside the colonists' chimneys, using the bricks to build nests with twigs and their saliva. Since then, chimney swifts have been members of many urban ecosystems across the eastern half of the US.</h2>
+					</div>
+				</div>
+			<!--second column-->
+			<div class="column">
+				<a href="https://alabamabirdingtrails.com/bird/chimney-swift/" target="_blank"><img src="css/images/swift1.jpeg" style="width: 60%; box-shadow: 7px 7px 10px grey; margin-top: 50px"></a>
+			</div>
+		</div>
+	</section>
+<!--slide 3-->
+	<section class="parallax bg2">
+		<div style="margin-left: 200px; margin-right: 200px">
+			<h2 style="font-family: 'EB Garamond', serif; font-size: 40px; color:#f3e9cc; text-align:center; padding:10px; letter-spacing: 1.5px">Chimney swifts migrate from South America to the US as early as April each year. From then until mid-October, they will breed, raise young and join other groups of swifts before heading South again for the winter.</h2>
+			<div style="height: 20px;"></div>
+			<h2 style="font-family: 'EB Garamond', serif; font-size: 40px; color:#f3e9cc; text-align:center; padding:10px; letter-spacing: 1.5px">Swifts will use one of three main routes to migrate between North and South America; the Mississippi River, the Appalachian mountains, or along the Atlantic coast. Asheville, NC sits along two of these migratory paths (The Appalachian and the Mississippi River flyways), making it a key location for roosting.</h2>
+		</div>
+	</section>
+<!--slide 4, first map-->
+	<section class="no-parallax">
+		<div id='map'></div>
+		<div class='map-overlay' id='legend'><h3 style="font-family: 'EB Garamond', serif; font-size: 22px; color:#f3e9cc; padding-top: 10px; margin-left: 15px; margin-right: 15px">Right-click and drag to view map at an angle. Click on a bird to see each roost site.</h3></div>
+		<div class='map-overlay' id='features'><h2 style="padding-left:10px; padding-right: 10px; letter-spacing: 2px; font-family: 'Old Standard TT', serif; color:#F3E9CC; margin-top: 12px; font-size: 28px; line-height: 40px">Surveyed roosts in Asheville, NC (2020)</h2></div>
+	</section>
+<!--slide 5-->
+	<section class="parallax bg3">
+		<div class="textbg_p" style="width:100%; margin-left:300px; margin-right:300px">
+			<div class="definition">
+				<h1 style="text-align: left; margin-left: 20px; font-family: 'EB Garamond', serif; font-size: 44px; font-style: bold; color: #F3E9CC;">dem·ol·ish</h1>
+			</div>
+			<h2>More masonry chimneys are being destroyed than built in recent years, meaning swifts are once again facing habitat loss despite previously adapting to human interference. Chimney swifts are considered vulnerable to extinction by the <a href="https://www.iucnredlist.org/species/22686709/131792415" target="_blank">IUCN Red List of Threatened Species</a>. Understanding swift roosting patterns is important for habitat conservation efforts, but little long-term research exists on these issues.</h2></div>
+	</section>
+<!--slide 6, second map-->
+	<section class="no-parallax">
+	<div class="row">
+		<div class="column">
+			<a href="https://will.illinois.edu/environmentalalmanac/program/an-appreciation-for-chimney-swifts"><img src="css/images/swiftart2.jpg" style="margin-top: 100px; box-shadow: 7px 7px 10px grey;"></a>
+		</div>
+		<div class="column" style="margin-right: 100px">
+		<div class="textbg_nop" style="box-shadow: 7px 7px 10px grey;">
+			<div class="definition">
+				<h1 style="text-align: left; margin-left: 20px; font-family: 'EB Garamond', serif; font-size: 42px; font-style: bold; color: #F3E9CC;">sur·vey</h1>
+			</div>
+			<h2 style="margin-left: 40px; margin-right: 40px">A season-long survey was published in 2021 to understand roost-site range and selection patterns by chimney swifts within Asheville. While annual roost locations are usually well-documented within local birding communities, few studies have consistently recorded the condition and use of roost sites during an entire breeding season.</h2>
+		</div>
+		<div style="height: 60px;"></div>
+		<div class="textbg_nop" style="box-shadow: 7px 7px 10px grey;">
+			<div class="definition">
+				<h1 style="text-align: left; margin-left: 20px; font-family: 'EB Garamond', serif; font-size: 42px; font-style: bold; color: #F3E9CC;">hy·poth·e·sis</h1>
+			</div>
+			<h2 style="margin-left: 50px; margin-right: 50px">Researchers tested two hypotheses regarding how chimney swifts select roost sites throughout their time in Asheville: either they choose one roost site and stay there until they return South (concurrent roost-use), or they move to different sites as the breeding season progresses (sequential roost-use).</h2>
+		</div>
+	</div>
+</div>
+	</section>
+<!--slide 7-->
+	<section class="parallax bg4">
+	<div class="textbg_p" style="margin-left:300px; margin-right:300px">
+		<div class="definition">
+				<h1 style="text-align: left; margin-left: 20px; font-family: 'EB Garamond', serif; font-size: 42px; font-style: bold; color: #F3E9CC;">find·ings</h1>
+			</div>
+		<h2>The study found that most roost sites were not occupied by swifts through the entire season, the only exception being the Merrimon Avenue site. Early in the season, most sites had small populations that likely consisted of local swifts and early migraters. As the season progressed, however, these birds would join up with other groups and move into other vacant chimneys, supporting the sequential roost-use hypothesis.</h2>
+	</div>
+	</section>
+<!--slide 8, second map-->
+	<section class="no-parallax">
+        <div id="row" id="map_2">
+        	<div id="column">
+        		<img id="myImage" src="css/images/map2_0815.png" style="width:60%; box-shadow: box-shadow: 5px 5px 10px grey;">
+        		<div class="buttondiv" style="width: 80%; margin: 0 auto; background-color: black: color: #F3E9CC">
+        			<div class="textbg_nop"><h2>The map above shows a handful of the surveyed roost sites in Asheville during the 2020 swift migration period. Click the buttons below to reveal population densities at different dates throughout the season.</h2></div>
+        		</div>
+            	<button class="button" onclick="document.getElementById('myImage').src='css/images/map2_0815.png'">8/15</button>
+            	<button class="button" onclick="document.getElementById('myImage').src='css/images/map2_0901.png'">9/1</button>
+            	<button class="button" onclick="document.getElementById('myImage').src='css/images/map2_0915.png'">9/15</button>
+            	<button class="button" onclick="document.getElementById('myImage').src='css/images/map2_1001.png'">10/1</button>
+            	<button class="button" onclick="document.getElementById('myImage').src='css/images/map2_1015.png'">10/15</button>
+            </div>
+        </div>
+			
+	</section>
+	<section class="parallax bg5">
+		<div class="row" style="margin-left: 100px; margin-right: 100px">
+			<div class="column">
+				<div class="textbg_p" style="margin-right: 50px">
+					<div class="definition">
+						<h1 style="text-align: left; margin-left: 20px; font-family: 'EB Garamond', serif; font-size: 40px; font-style: bold; color: #F3E9CC;">con·ser·va·tion</h1>
+					</div>
+					<p style="color: #F3E9CC; margin-left: 60px; margin-right: 60px; text-align:left">Swifts have become important parts of urban ecosystems, especially in keeping mosquitoes and other bugs at bay. It is in our best interest to help them increase their numbers, and there are many ways to help swifts thrive.</p>
+					<h2 style="text-align: left">what you can do</h2>
+					<p style="color: #F3E9CC; margin-left: 60px; margin-right: 60px; text-align:left; padding-bottom: 40px">Learn to identify chimney swifts and keep an eye out for them at dusk in the summertime. If you have an older chimney, you can <a href="https://nc.audubon.org/news/make-your-chimney-swift-friendly">make it "swift-friendly"</a> to help facilitate habitat growth in your area. If your chimney is lined with metal, cap it during the warm months to prevent swifts from becoming trapped inside.</p>
+					<div style="height:40px"></div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="textbg_p" style="margin-left: 50px">
+					<div class="definition">
+						<h1 style="text-align: left; margin-left: 20px; font-family: 'EB Garamond', serif; font-size: 40px; font-style: bold; color: #F3E9CC;">get·involved</h1>
+					</div>
+					<h2 style="text-align: left">in your community</h2>
+					<p style="margin-left: 60px; margin-right: 60px; text-align: left"><a href="https://www.blueridgeaudubon.org/home" target="_blank">Blue Ridge Audubon</a> is Asheville's local Audubon Society chapter. They host a variety of bird-watching events and meetings, which are open to all members of the public.</p>
+					<p style="margin-left: 60px; margin-right: 60px; text-align: left; padding-bottom: 40px">You can find bird data and information specific to North Carolina at <a href="http://ncbirds.carolinabirdclub.org/view.php?species_id=347" target="_blank">Birds of North Carolina</a>.</p>
+					<h2 style="text-align: left">nationwide</h2>
+					<p style="margin-left: 60px; margin-right: 60px; text-align: left; padding-bottom: 40px">If you see chimney swifts going into a roost site in your area, go to <a href="http://www.chimneyswifts.org/index_files/Page1909.htm" target="_blank">A Swift Night Out</a> to report the location and estimated number of swifts. This is a nationwide database used by birders and wildlife scientists across the country. They also have many local chapters that host swift-watching events each year.</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<!---bottom nav bar--->
+<section class="bottomnavbar">
+	<div class="row">
+		<div class="column2" style="border-right-style: 1px solid white; margin-left: 100px">
+			<p style="text-align: left"><a href="about.html">About</a></p>
+			<p style="text-align: left"><a href="sources.html">Sources</a></p>
+			<p style="text-align: left"><a href="#map">Roosts in Asheville, NC</a></p>
+			<p style="text-align: left"><a href="#map_2">Roost dynamics of 2020 season</a></p>
+		</div>
+		<div class="column2" style="border-right-style: 1px solid white; border-left-style: 1px solid white">
+			<p><a href="#top" style="text-decoration: none">Jump to top</a></p>
+			<div style="width: 100%; height: 30px;"></div>
+			<img src="css/images/chimneymarker1.png" style="margin: 0 auto; width: 47px; height: 80px">
+		</div>
+		<div class="column2" style="border-left-style: 1px solid white; margin-right: 100px">
+			<p style="text-align: right"><a href = "mailto: jmurphy6@unca.edu">Contact the dev</a></p>
+		</div>
+	</div>
+</section>
+	</main>
+	<script>
+    //scroll to top//
+    window.scrollTo(0, 0);
+    </script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>

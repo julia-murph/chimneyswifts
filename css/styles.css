@@ -1,0 +1,437 @@
+body {
+  margin: 0;
+  background-color: #F3E9CC;
+}
+/* textbox formatting */
+.textbg {
+  background-color: black;
+  padding: 14px 0px 10px 0px;
+}
+.textbg_p {
+  background-color: black;
+}
+.textbg_nop {
+  box-shadow: 7px 7px 10px grey;
+  background-color: black;
+}
+/* nav bar formatting */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  font-family: 'Old Standard TT', serif;
+  font-size: 14pt;
+  letter-spacing: 1.5px;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #F3E9CC;
+  text-align: center;
+  padding: 10px 36px;
+  text-decoration: none;
+}
+.navbar a:current {
+    background: #ddd;
+    color: #F3E9CC;
+}
+.navbar a:visited {
+    color: #F3E9CC;
+}
+.navbar a:hover {
+  background: #F3E9CC;
+  color: black;
+}
+
+/* text formatting */
+main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  margin-top: 50px; 
+  text-align: center;
+}
+main h1{
+  font-family: 'Old Standard TT', serif;
+  font-size: 120px;
+  color: black;
+  letter-spacing: 7px;
+  text-align: center;
+  margin: 0 auto;
+}
+main h2{
+  font-family: 'EB Garamond', serif;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+main p{
+  font-family: 'EB Garamond', serif;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+section {
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+section a:link{
+  color: #4d6f57;
+}
+section a:active{
+  color: #F3E9CC;
+}
+section a:hover{
+  color: #a4ccda;
+}
+section a:visited{
+  color: #b37f65;
+}
+.bottomnavbar{
+  background: linear-gradient(to bottom, #b37f65 0%, #996d57 100%);
+  height:250px;
+}
+.bottomnavbar a{
+  color: #F3E9CC;
+  font-size: 20px;
+  text-decoration: none;
+  font-style: bold;
+}
+.bottomnavbar a:link{
+  color: #F3E9CC;
+}
+.bottomnavbar a:visited{
+  color: #F3E9CC;
+}
+.bottomnavbar a:hover{
+  color: black;
+}
+.bottomnavbar a:active{
+  color: #F3E9CC;
+}
+/* definition title formatting */
+.definition h1{
+  font-family: 'EB Garamond', serif;
+  font-size: 40px;
+  font-style: bold;
+  color: #F3E9CC;
+}
+.definition h2{
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  color: #F3E9CC;
+}
+.definition h3{
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  font-style: italic;
+  color: #F3E9CC;
+}
+
+/* black textbox content styling */
+.textbg_p p{
+  font-family: 'EB Garamond', serif;
+  font-size: 24px;
+  color: #F3E9CC;
+}
+.textbg_p h2{
+  font-family: 'EB Garamond', serif;
+  font-size: 30px;
+  color:#f3e9cc;
+  text-align: center;
+  padding: 20px;
+  letter-spacing:1.5px;
+}
+.textbg_nop p{
+  font-family: 'EB Garamond', serif;
+  font-size: 24px;
+  color: #F3E9CC;
+  letter-spacing: 1.5px;
+}
+.textbg_nop h2{
+  font-family: 'EB Garamond', serif;
+  font-size: 30px;
+  color:#f3e9cc;
+  text-align: center;
+  letter-spacing:1.5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+/* flexbox formatting */
+.row{
+  display: flex;
+  width: 100%;
+}
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+.column2 {
+  flex: 33.33%;
+  padding: 5px;
+  line-height: 2px;
+  letter-spacing: 1px;
+}
+
+/* parallax formatting */
+.no-parallax {
+  background-color: #F3E9CC;
+  z-index: 999;
+}
+.parallax h1 {
+  width: 60%;
+  font-size: 2rem;
+}
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+/*parallax backgrounds*/
+.bg1::after {
+  background: url("images/swiftart1.jpg");
+  background-size: cover;
+}
+.bg2::after {
+  background: url("images/swift2.jpg");
+  background-size: cover;
+}
+.bg3::after {
+  background: url("images/swift3.jpg");
+  background-size: cover;
+}
+.bg4::after {
+  background: url("images/swift4.jpg");
+  background-size: cover;
+}
+.bg5::after {
+  background: url("images/swift5.jpg");
+  background-size: cover;
+}
+
+.bg7::after {
+  background: url("images/swift7.jpg");
+  background-size: cover;
+}
+.bg8::after {
+  background: url("images/aboutsplash.jpg");
+  background-size: cover;
+}
+/* first map styling */
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  margin-right: 20px;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+  color: black;
+}
+
+#features {
+  top: 0;
+  height: 110px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  width: 400px;
+  background-color: black;
+  color: #F3E9CC;
+  font-family: 'EB Garamond', serif;
+  font-size: 25px;
+  padding-top: 10px;
+  box-shadow: 5px 5px 10px grey;
+}
+
+#legend {
+  box-shadow: 5px 5px 10px grey;
+  height: 180px;
+  margin-bottom: 40px;
+  width: 300px;
+  color: #F3E9CC;
+  background-color: black;
+  border: 1px solid black;
+  padding-left:10px;
+  padding-right:10px;
+  letter-spacing: 2px;
+}
+
+.legend-key {
+  display: inline-block;
+  border-radius: 20%;
+  line-height:10px;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+#map-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+}
+.blankmarker{
+    width: 30px;
+    height: 45px;
+    cursor: pointer; 
+    padding: 2px;
+}
+.marker{
+    background-image: "css/images/chimneymarker1.png";
+    background-size: cover;
+    width: 30px;
+    height: 45px;
+    cursor: pointer; 
+    padding: 2px;
+}
+/*Styling for Pop ups*/
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px; 'Helvetica Neue', 'Arial', 'Helvetica', sans-serif;
+}
+.mapboxgl-popup-content {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #e5f5f9;
+}
+.mapboxgl-popup-content h2 {
+    color: black;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+.mapboxgl-popup-content p {
+    color: #921A11;
+}
+/*change map with button styling*/
+/*map 2 = aug 15*/
+#left-section{
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    background-color: #F3E9CC;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    font-size: 50pt;
+}
+#left-section h2{
+    width: 80%;
+    margin: 100px auto;
+    padding: 50px 15px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20pt;
+    cursor: pointer;
+}
+#mapchange2 {
+  height: 100vh;
+}
+#mapchange3 {
+  height: 0vh;
+}
+.map2-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  margin-right: 20px;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+  color: black;
+}  
+#buttondiv {
+  top: 0;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  width: 50%;
+  background-color: black;
+  color: #F3E9CC;
+  font-family: 'EB Garamond', serif;
+  font-size: 25px;
+  padding-top: 10px;
+  box-shadow: 5px 5px 10px grey;
+  margin: 0 auto;
+}
+.dynamicsmap {
+  width: 100%;
+}
+#map2 { 
+    background-image: "images/map2_0815.png";
+    background-size: cover;
+} 
+/*map 3 = sept 1*/
+#map3 { 
+    background-image: "images/map2_0901.png";
+    background-size: cover;
+}
+/*map 4 = sept 15 */
+#map4 { 
+    background-image: "images/map2_0915.png";
+    background-size: cover;
+}
+/*map 5 = oct 1*/
+#map5 {
+    background-image: "images/map2_1001.png";
+    background-size: cover;
+}
+/*map 6 = oct 15*/
+#map6 { 
+    background-image: "images/map2_1015.png";
+    background-size: cover;
+}
+/* return to top button styling */
+#myBtn {
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: #F3E9CC; /* Text color */
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+}
+
+#myBtn:hover {
+  color: #a4ccda;
+}
+.button {
+  background-color: black;
+  border: none;
+  color: #F3E9CC;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 26px;
+  font-family: 'EB Garamond', serif;
+  display: inline-block;
+}
